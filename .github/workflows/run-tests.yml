@@ -69,4 +69,4 @@ jobs:
         run: |
           URL=$(gcloud run services describe "${{ secrets.DOCKER_HUB_USERNAME }}-tech-trek" --region us-central1 --format 'value(status.url)')
           echo "Cloud Run service URL: $URL"
-          echo "SERVICE_URL=$URL" >> $GITHUB_ENV
+          echo "SERVICE_URL=$URL" >> $GITHUB_ENV 
